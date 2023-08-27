@@ -12,6 +12,7 @@ interface SubscriptionPlan {
   
   interface BillingResult {
     totalAmount: number;
+    currency: string;
     id: string;
   }
   
@@ -42,6 +43,6 @@ interface SubscriptionPlan {
     }
   
     let totalAmount = Number(basePrice) + usageCharges;
-    return { totalAmount, id: subscriptionPlan.id };
+    return { totalAmount, id: subscriptionPlan.id,currency :subscriptionPlan.currency};
   };
   

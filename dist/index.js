@@ -19,6 +19,6 @@ const calculateBillingAmount = ({ subscriptionPlan, usageData, }) => {
         }
     }
     let totalAmount = Number(basePrice) + usageCharges;
-    return { totalAmount, id: subscriptionPlan.id };
+    return { totalAmount, id: subscriptionPlan.id, currency: subscriptionPlan.currency };
 };
 exports.calculateBillingAmount = calculateBillingAmount;

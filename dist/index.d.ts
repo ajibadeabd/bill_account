@@ -17,6 +17,7 @@ interface UsageData {
 }
 interface BillingResult {
     totalAmount: number;
+    currency: string;
     id: string;
 }
 export declare const calculateBillingAmount: ({ subscriptionPlan, usageData, }: {
