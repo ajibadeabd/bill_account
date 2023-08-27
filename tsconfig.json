@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "calculate-billing-amount": ["src/index.ts"] // Adjust the path to your TypeScript source file
+    },
+    "outDir": "./dist",
+    "target": "ES6",
+    "module": "CommonJS",
+    "declaration": true
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
